@@ -8,6 +8,9 @@ dotenvconfig();
 /* TODO: change to read configuration from environment */
 const blogEnabled = Boolean(process.env.BLOG_ENABLED === 'true')
 
+// Git Repository URL
+const repo_url = process.env.GIT_REPOSITORY_URL ?? 'https://github.com/Belsamor/my-dso-blog'
+
 const config: Config = {
   title: 'DA DSO Lernblog',
   tagline: 'Lars Hank - von IT Service Management mit DSO kombinieren',
@@ -46,7 +49,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/spmse/dev-blog-template',
+            repo_url,
         },
         blog: blogEnabled ? 
           {
@@ -58,7 +61,7 @@ const config: Config = {
             // Please change this to your repo.
             // Remove this to remove the "edit this page" links.
             editUrl:
-              'https://github.com/spmse/dev-blog-template',
+              repo_url,
             // Useful options to enforce blogging best practices
             onInlineTags: 'warn',
             onInlineAuthors: 'warn',
@@ -89,7 +92,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/spmse/dev-blog-template',
+          href: repo_url,
           label: 'Github',
           position: 'right',
         },
