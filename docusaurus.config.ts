@@ -79,7 +79,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Mein DA DSO Lernblog',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -108,22 +108,9 @@ const config: Config = {
               label: 'Tutorial',
               to: '/docs/guides/intro',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Docusaurus Blog',
+              to: '/docs/projects',
             },
           ],
         },
