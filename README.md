@@ -79,19 +79,7 @@ New content can be added as follows:
 
 ### Deploy to Github Pages
 
-To deploy using SSH:
-
-```
-$ USE_SSH=true npm run deploy
-```
-
-To deploy without using SSH, run:
-
-```
-$ GIT_USER=<Your GitHub username> npm run deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+After a push to the main branch the website will be automatically deployed to GitHub Pages with a GitHub Action workflow.
 
 ### Deploying using NGINX
 
