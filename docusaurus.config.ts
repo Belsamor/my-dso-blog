@@ -110,7 +110,7 @@ const config: Config = {
             },
             {
               label: 'Docusaurus Blog',
-              to: '/docs/projects',
+              to: '/docs/projects/docusaurus-blog',
             },
           ],
         },
