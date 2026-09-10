@@ -13,7 +13,7 @@ const repo_url = process.env.GIT_REPOSITORY_URL ?? 'https://github.com/Belsamor/
 
 const config: Config = {
   title: 'DA DSO Lernblog',
-  tagline: 'Lars Hank - von IT Service Management mit DSO kombinieren',
+  tagline: 'Lars Hank - IT Service Management mit DSO kombinieren',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
