@@ -17,7 +17,6 @@ This repository hosts a developer blog built with Docusaurus. It includes tools 
   - [Deployment](#deployment)
     - [Deploy to Github Pages](#deploy-to-github-pages)
     - [Deploying using NGINX](#deploying-using-nginx)
-    - [Contributing](#contributing)
 
 ## Quickstart
 
@@ -79,26 +78,8 @@ New content can be added as follows:
 
 ### Deploy to Github Pages
 
-To deploy using SSH:
-
-```
-$ USE_SSH=true npm run deploy
-```
-
-To deploy without using SSH, run:
-
-```
-$ GIT_USER=<Your GitHub username> npm run deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+After a push to the main branch the website will be automatically deployed to GitHub Pages with a GitHub Action workflow.
 
 ### Deploying using NGINX
 
 To deploy the site using NGINX and Docker, follow this [guide](./docs/guides/deploy-docusaurus-with-docker-and-nginx.md)
-
-### Contributing
-
-Currently, this project does not seek collaborators, but we're open to suggestions regarding enhancements or guides to prepare.
-Open an issue with a detailed description on the change you suggest and elaborate why it's benefitial for the project and vast majority.
-If accepted in the discussion, open a pull request from your fork of this repository to contribute your changes.
