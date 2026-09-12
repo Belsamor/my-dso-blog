@@ -26,30 +26,30 @@ Checkout this repository to see the code/implementation
 ## Quickstart
 1. Configure SSH access
 - Connect to your server
-'''bash
+```bash
 ssh <user>@<ip-adress>
-'''
+```
 - Add your public ssh key to the server
-'''bash
+```bash
 ssh-copy-id -i ~/.ssh/<key-name.pub> <user>@<ip-adress>
-'''
+```
 - Use your private ssh key for server login
-'''bash
+```bash
 ssh -i ~/.ssh/<key-name> <user>@<ip-adress>
-'''
+```
 - Check authorized_keys file for your ssh-key data
-'''bash
+```bash
 cat ~/.ssh/authorized_keys
-'''
+```
 - Change PW authentication config to no and remove comment
-'''bash
+```bash
 sudo nano /etc/ssh/sshd_config
 PasswordAuthentication no
-'''
+```
 - Restart ssh service to apply changes
-'''bash
+```bash
 sudo systemctl restart ssh.service
-'''
+```
 2. 
 
 ## Description
