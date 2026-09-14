@@ -59,7 +59,7 @@ sudo systemctl restart ssh.service
 ```
 - Test if user login has been removed
 ```bash
-ssh -o PubkeyAuthentication=no lars-hank@128.140.100.92
+ssh -o PubkeyAuthentication=no <user>@<ip-address>
 ```
 
 2. Install and configuration of nginx
@@ -130,6 +130,11 @@ nano ~/.ssh/config
 	        IdentitiesOnly yes
 
 ```
+- Check that connecting via ssh is working. The following text should be seen: "Hi USERNAME You've successfully authenticated, but GitHub does not provide shell access."
+```bash
+ssh -T git@github.com
+```
+
 
 3. Configure Git on vm
 
